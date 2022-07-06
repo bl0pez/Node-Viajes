@@ -8,6 +8,11 @@ const app = express();
 
 app.set('view engine', 'pug');
 
+app.use((req, res, next) => {
+    res.locals.agenciaViajes = 'Agencia de Viajes';
+    next();
+})
+
 app.use(express.static('public'));
 
 app.use('/', router);

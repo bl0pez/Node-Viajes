@@ -15,5 +15,16 @@ router.get("/nosotros", (req, res) => {
     });
 })
 
+router.get("/viajes", (req, res) => {
+    res.render('viajes', {
+        title: 'Viajes'
+    });
+})
+
+router.get("/testimoniales", (req, res) => {
+    res.render('testimoniales', {
+        title: 'Testimoniales'
+    });
+})
 
 export default router;
