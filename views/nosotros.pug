@@ -2,4 +2,26 @@ extends ./layout/index
 block contenido
     main.container.mt-5
         .row
-            h1 #{title}
+            .col-md-5 
+                img(src="img/nosotros.jpg", alt="sobre nosotros", class="img-fluid")
+            .col-md-7
+                h1 #{title}
+                blockquote  ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet mi nunc. Etiam rhoncus molestie ex non pharetra. Morbi efficitur neque at orci congue faucibus. Suspendisse ac commodo arcu, sed bibendum arcu. Maecenas pretium elit at mauris venenatis porttitor.
+
+                p ornare commodo est, a rutrum nisl bibendum quis. Aliquam nec elit sit amet sem lobortis ornare. Vestibulum pharetra tempor porttitor. Quisque a porta justo. In ex turpis, accumsan nec nibh quis, lobortis dapibus ex.
+                p diam ut consequat sagittis, mauris risus imperdiet nulla, eu ullamcorper velit dui suscipit nisl. Maecenas vitae orci sit amet ligula fringilla molestie id a nulla. Aenean lorem turpis, tempor non lectus sit amet, sagittis tempor metus. Aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    .listado-iconos     
+        .container.mt-5.py-5.text-center  
+            .row 
+                .col-md-4
+                    img(src="img/icono_seguridad.svg", alt="seguridad icono", class="img-fluid mb-4")
+                    h2.mb-4 Seguridad
+                    p diam ut consequat sagittis, mauris risus imperdiet nulla, eu ullamcorper velit dui suscipit nisl.
+                .col-md-4
+                    img(src="img/icono_destinos.svg", alt="destino icono", class="img-fluid mb-4")
+                    h2.mb-4 Mejores Destinos
+                    p diam ut consequat sagittis, mauris risus imperdiet nulla, eu ullamcorper velit dui suscipit nisl.
+                .col-md-4
+                    img(src="img/icono_precios.svg", alt="precio icono", class="img-fluid mb-4")
+                    h2.mb-4 Precios
+                    p diam ut consequat sagittis, mauris risus imperdiet nulla, eu ullamcorper velit dui suscipit nisl.
