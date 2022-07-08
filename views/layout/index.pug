@@ -7,7 +7,9 @@ html(lang="es")
         link(rel="stylesheet", href="/css/bootstrap.css")
         link(rel="stylesheet", href="/css/style.css")
         title #{agenciaViajes} | #{title}
-    body 
+    body(class= clase) 
         include header
+        block slider 
         block contenido
+        block testimoniales 
         include footer

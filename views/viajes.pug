@@ -1,5 +1,5 @@
 extends ./layout/index
 block contenido
+    h1(class="mt-5 text-center") #{title}
     main.container.mt-5
-        .row
-            h1 #{title}
+        include ./layout/bloque_viajes

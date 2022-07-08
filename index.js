@@ -14,9 +14,11 @@ db.authenticate()
 app.set('view engine', 'pug');
 
 app.use((req, res, next) => {
-    res.locals.agenciaViajes = 'Agencia de Viajes';
-    next();
+  res.locals.agenciaViajes = 'Agencia de Viajes';
+  next();
 })
+
+app.use(express.urlencoded({extended: true}));
 
 app.use(express.static('public'));
 

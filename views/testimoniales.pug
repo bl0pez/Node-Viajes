@@ -1,5 +1,27 @@
 extends ./layout/index
 block contenido
     main.container.mt-5
+        h1.text-center.mt-5 #{title}
+
+        blockquote.text-center Lee sobre nuestros clientes y sus experiencias.
+        include ./layout/bloque_testimoniales
+    
         .row
-            h1 #{title}
+            h2.d-block.w-100.text-center Agregar un Testimonial
+            if(errors)
+                each error in errors
+                    .alert.alert-danger.mt-3.mb-3.d-block.w-100.text-center #{error}
+                end
+            .row.justify-content-center.col
+                .col-md-8
+                    form(action="/testimoniales" method="POST")
+                        .form-group
+                            label(for="nombre")  Nombre:
+                            input#nombre(type="text", value=nombre, placeholder="Pepito", name="nombre", class="form-control")
+                        .form-group    
+                            label(for="correo")  Coreo:
+                            input#correo(type="email", value=correo, placeholder="pepito@gmail.com", name="correo", class="form-control")
+                        .form-group    
+                            label(for="mensaje")  Testimonial:
+                            textarea#mensaje(name="mensaje", rows=3, class="form-control", placeholder="Escribe tu testimonial")=mensaje  
+                        input.btn.btn-success.btn-block(type="submit")

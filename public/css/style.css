@@ -35,6 +35,7 @@ h3 {
 }
 .slider {
     background: url(../img//superior.jpg);
+    background-attachment: fixed;
     min-height: 600px;
     height: 100vh;
     background-size: cover;

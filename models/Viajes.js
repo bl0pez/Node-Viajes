@@ -11,11 +11,11 @@ export const Viajes = db.define('viajes', {
         allowNull: false
     },
     fecha_ida: {
-        type: sequelize.Date,
+        type: sequelize.DATE,
         allowNull: false
     },
     fecha_vuelta: {
-        type: sequelize.Date,
+        type: sequelize.DATE,
         allowNull: false
     },
     precio: {
@@ -30,7 +30,7 @@ export const Viajes = db.define('viajes', {
         type: sequelize.STRING,
         allowNull: false
     },
-    disponible: {
+    disponibles: {
         type: sequelize.STRING,
         allowNull: false
     },
@@ -39,3 +39,4 @@ export const Viajes = db.define('viajes', {
         allowNull: false
     }
 });
+
